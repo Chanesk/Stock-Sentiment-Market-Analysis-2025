@@ -1,4 +1,5 @@
-# Project Background
+#Stock Sentiment & Market Analysis 2025
+## Project Background
 
 Stock prices are influenced by many factors, including market conditions, company performance, investor behavior, and public sentiment. With the growth of social media, investors increasingly express opinions and expectations about companies through online discussions.
 
@@ -25,14 +26,14 @@ Tests whether adding sentiment-related information can improve the ability to pr
 The overall goal is not to assume that sentiment can predict stock prices, but to determine whether social-media sentiment provides additional information that could support short-term market analysis and decision-making.
 
 
-# Power BI Dashboard
+## Power BI Dashboard
 
 ![Power BI Dashboard](images/powerbi-dashboard.png)
 
 > Replace `images/powerbi-dashboard.png` with the actual path of your Power BI screenshot in your GitHub repository.
 
 
-# Dataset & Data Preparation
+## Dataset & Data Preparation
 
 We are using three datasets:
 
@@ -42,7 +43,7 @@ We are using three datasets:
 
 The dataset contains financial social-media posts together with stock-market information and a next-day three-class target.
 
-## Important Columns
+### Important Columns
 
 - `timestamp` — date and time of the observation
 - `ticker` — stock associated with the social-media post
@@ -59,7 +60,7 @@ The dataset contains financial social-media posts together with stock-market inf
 - `gap_open` — difference between the previous closing price and the opening price
 - `intraday_range` — price range during the trading session
 
-## Target Variable
+### Target Variable
 
 The target variable contains three next-day stock-direction classes:
 
@@ -68,7 +69,7 @@ The target variable contains three next-day stock-direction classes:
 - `2` = SELL
 
 
-## Quality Control & Preprocessing
+### Quality Control & Preprocessing
 
 - Inspected the dataset structure
 - Checked missing values
@@ -80,7 +81,7 @@ The target variable contains three next-day stock-direction classes:
 - Prepared market and technical indicators for predictive modeling
 
 
-# Executive Summary
+## Executive Summary
 
 This project investigates whether financial social-media sentiment provides useful information for predicting next-day stock direction.
 
@@ -93,7 +94,7 @@ Predictive modeling showed that market and technical indicators performed better
 The results suggest that social-media sentiment contains some information about next-day stock direction, but the information was not strong enough to improve predictions beyond the market and technical indicators tested in this project.
 
 
-# Predictive Modeling
+## Predictive Modeling
 
 This stage answers the practical question:
 
@@ -101,7 +102,7 @@ This stage answers the practical question:
 
 Several models were tested.
 
-## 1. Sentiment Only
+### 1. Sentiment Only
 
 Uses only financial social-media sentiment generated using FinBERT.
 
@@ -109,7 +110,7 @@ Validation Accuracy: **39.65%**
 
 Macro F1: **0.23**
 
-## 2. Market & Technical Indicators Only
+### 2. Market & Technical Indicators Only
 
 Uses market and technical indicators including volatility, relative volume, RSI, returns, moving-average indicators, gap open, and intraday range.
 
@@ -119,7 +120,7 @@ Macro F1: **0.39**
 
 This was the best-performing model during validation.
 
-## 3. Market & Technical Indicators + Categorical Sentiment
+### 3. Market & Technical Indicators + Categorical Sentiment
 
 Combines market and technical indicators with positive, neutral, and negative sentiment.
 
@@ -129,7 +130,7 @@ Macro F1: **0.39**
 
 Adding categorical sentiment did not improve model performance.
 
-## 4. Market & Technical Indicators + Sentiment Strength
+### 4. Market & Technical Indicators + Sentiment Strength
 
 Combines market and technical indicators with a numerical sentiment-strength measure calculated from FinBERT probabilities.
 
@@ -140,7 +141,7 @@ Macro F1: **0.39**
 This representation of sentiment also did not improve predictive performance.
 
 
-## Final Model Evaluation
+### Final Model Evaluation
 
 The market and technical indicators model was selected using the validation results and evaluated on the unseen test dataset.
 
@@ -151,7 +152,7 @@ The final model performed best at identifying SELL observations, while HOLD obse
 
 # Key Findings
 
-## Finding 1 — Sentiment has a relationship with stock direction
+### Finding 1 — Sentiment has a relationship with stock direction
 
 The chi-square test found a statistically significant association between sentiment and next-day stock direction.
 
@@ -161,7 +162,7 @@ However, Cramér's V was only **0.054**, indicating that the strength of the rel
 
 This means that although sentiment and stock direction are statistically related, sentiment does not have a strong relationship with the next-day outcome.
 
-## Finding 2 — Market and technical indicators were more useful
+### Finding 2 — Market and technical indicators were more useful
 
 The market-only model achieved:
 
@@ -173,7 +174,7 @@ and:
 
 This model performed better than the sentiment-only model and the models that combined sentiment with market and technical indicators.
 
-## Finding 3 — Sentiment did not improve prediction
+### Finding 3 — Sentiment did not improve prediction
 
 Adding sentiment to the market and technical indicators slightly reduced validation accuracy.
 
@@ -185,7 +186,7 @@ This occurred with both:
 Therefore, sentiment did not provide additional predictive value in the models tested.
 
 
-# Central Finding
+## Central Finding
 
 **Financial social-media sentiment contains some information about next-day stock direction, but not enough to improve predictions beyond market and technical indicators.**
 
@@ -196,7 +197,7 @@ In simple terms:
 
 # Recommendations
 
-## Recommendation for Investors and Analysts
+### Recommendation for Investors and Analysts
 
 Social-media sentiment should be treated as **supplementary information rather than a standalone trading signal**.
 
@@ -219,7 +220,7 @@ Instead, sentiment can be considered alongside:
 - Recent returns
 - Moving-average indicators
 
-## Practical Implication
+### Practical Implication
 
 The results suggest that relying on social-media sentiment alone is unlikely to provide a reliable short-term trading advantage in this dataset.
 
@@ -228,23 +229,23 @@ Market and technical indicators provided stronger predictive information in the 
 Therefore, social-media sentiment may be useful for understanding investor discussions and market opinions, but it should not be used as the primary signal for next-day stock-direction decisions based on the results of this project.
 
 
-# Limitations
+## Limitations
 
-## 1. Association Does Not Mean Causation
+### 1. Association Does Not Mean Causation
 
 The analysis identified an association between sentiment and stock direction, but it cannot establish that sentiment causes stock prices to rise or fall.
 
-## 2. Dataset-Specific Results
+### 2. Dataset-Specific Results
 
 The conclusions apply to this dataset and the features and models tested. They should not automatically be generalized to every stock market or social-media platform.
 
-## 3. Short Prediction Horizon
+### 3. Short Prediction Horizon
 
 The analysis focuses only on next-day stock direction.
 
 Sentiment may behave differently over longer periods such as several days, weeks, or longer investment horizons.
 
-## 4. Sentiment Classification Limitations
+### 4. Sentiment Classification Limitations
 
 FinBERT classifies the text, but financial language can be complex.
 
@@ -254,14 +255,14 @@ For example:
 
 This statement contains both positive and negative information, which may be difficult to represent with a single sentiment category.
 
-## 5. Class Imbalance
+### 5. Class Imbalance
 
 HOLD occurs less frequently than BUY and SELL.
 
 Therefore, accuracy alone is not sufficient to evaluate the models. Macro F1 and the confusion matrix were also considered.
 
 
-# Tools & Technologies
+## Tools & Technologies
 
 - Python
 - Pandas

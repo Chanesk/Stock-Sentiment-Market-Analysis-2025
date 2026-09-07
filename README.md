@@ -118,7 +118,7 @@ The final model performed best at identifying SELL observations, while HOLD obse
 
 # Key Findings
 
-### Finding 1 — Sentiment has a relationship with stock direction
+### Finding 1: Sentiment has a relationship with stock direction
 
 The chi-square test found a statistically significant association between sentiment and next-day stock direction.
 
@@ -131,7 +131,7 @@ This means that although sentiment and stock direction are statistically related
 <img src="images/finding1.png" width="600">
 
 
-### Finding 2 — Market and technical indicators were more useful
+### Finding 2: Market and technical indicators were more useful
 
 The market-only model achieved:
 
@@ -145,7 +145,7 @@ This model performed better than the sentiment-only model and the models that co
 
 <img src="images/finding2.png" width="600">
 
-### Finding 3 — Sentiment did not improve prediction
+### Finding 3: Sentiment did not improve prediction
 
 Adding sentiment to the market and technical indicators slightly reduced validation accuracy.
 
@@ -157,6 +157,7 @@ This occurred with both:
 Therefore, sentiment did not provide additional predictive value in the models tested.
 
 <img src="images/finding3.png" width="600">
+
 
 
 ## Central Finding

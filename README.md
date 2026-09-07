@@ -1,4 +1,5 @@
 #Stock Sentiment & Market Analysis 2025
+
 ## Project Background
 
 Stock prices are influenced by many factors, including market conditions, company performance, investor behavior, and public sentiment. With the growth of social media, investors increasingly express opinions and expectations about companies through online discussions.

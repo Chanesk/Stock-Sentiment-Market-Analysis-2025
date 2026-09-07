@@ -91,6 +91,7 @@ Predictive modeling showed that market and technical indicators performed better
 
 The results suggest that social-media sentiment contains some information about next-day stock direction, but the information was not strong enough to improve predictions beyond the market and technical indicators tested in this project.
 
+
 <img src="images/dashboard.png" width="700">
 
 ---
@@ -103,43 +104,7 @@ This stage answers the practical question:
 
 Several models were tested.
 
-### 1. Sentiment Only
-
-Uses only financial social-media sentiment generated using FinBERT.
-
-Validation Accuracy: **39.65%**
-
-Macro F1: **0.23**
-
-### 2. Market & Technical Indicators Only
-
-Uses market and technical indicators including volatility, relative volume, RSI, returns, moving-average indicators, gap open, and intraday range.
-
-Validation Accuracy: **42.21%**
-
-Macro F1: **0.39**
-
-This was the best-performing model during validation.
-
-### 3. Market & Technical Indicators + Categorical Sentiment
-
-Combines market and technical indicators with positive, neutral, and negative sentiment.
-
-Validation Accuracy: **41.70%**
-
-Macro F1: **0.39**
-
-Adding categorical sentiment did not improve model performance.
-
-### 4. Market & Technical Indicators + Sentiment Strength
-
-Combines market and technical indicators with a numerical sentiment-strength measure calculated from FinBERT probabilities.
-
-Validation Accuracy: **41.64%**
-
-Macro F1: **0.39**
-
-This representation of sentiment also did not improve predictive performance.
+<img src="images/predictive_modeling.png" width="500">
 
 
 ### Final Model Evaluation

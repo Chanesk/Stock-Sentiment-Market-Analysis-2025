@@ -143,6 +143,8 @@ and:
 
 This model performed better than the sentiment-only model and the models that combined sentiment with market and technical indicators.
 
+<img src="images/finding2.png" width="600">
+
 ### Finding 3 — Sentiment did not improve prediction
 
 Adding sentiment to the market and technical indicators slightly reduced validation accuracy.
@@ -153,6 +155,8 @@ This occurred with both:
 - Numerical sentiment strength
 
 Therefore, sentiment did not provide additional predictive value in the models tested.
+
+<img src="images/finding3.png" width="600">
 
 
 ## Central Finding

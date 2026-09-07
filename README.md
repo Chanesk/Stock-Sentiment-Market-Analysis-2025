@@ -91,6 +91,9 @@ Predictive modeling showed that market and technical indicators performed better
 
 The results suggest that social-media sentiment contains some information about next-day stock direction, but the information was not strong enough to improve predictions beyond the market and technical indicators tested in this project.
 
+![Tableau Overview Dashboard](images/dashboard.png)
+
+---
 
 ## Predictive Modeling
 

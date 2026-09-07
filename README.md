@@ -1,4 +1,4 @@
-#Stock Sentiment & Market Analysis 2025
+# Stock Sentiment & Market Analysis 2025
 
 ## Project Background
 

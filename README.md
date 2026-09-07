@@ -128,6 +128,9 @@ However, Cramér's V was only **0.054**, indicating that the strength of the rel
 
 This means that although sentiment and stock direction are statistically related, sentiment does not have a strong relationship with the next-day outcome.
 
+<img src="images/finding1.png" width="600">
+
+
 ### Finding 2 — Market and technical indicators were more useful
 
 The market-only model achieved:

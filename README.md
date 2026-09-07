@@ -8,19 +8,19 @@ This project investigates whether social-media sentiment contains useful informa
 
 The project focuses on four key dimensions:
 
-1. Market Behavior
+1. ### Market Behavior
 
   Examines stock returns, trading volume, volatility, and technical indicators to understand how stocks behave over time.
 
-2. Social-Media Sentiment
+2. ### Social-Media Sentiment
 
   Analyzes whether positive, neutral, or negative sentiment is associated with different next-day trading signals.
 
-3. Statistical Relationship
+3. ### Statistical Relationship
 
   Uses statistical analysis to determine whether the observed relationship between sentiment and stock direction is meaningful rather than simply occurring by       chance.
 
-4. Predictive Value
+4. ### Predictive Value
 
   Tests whether adding sentiment-related information can improve the ability to predict next-day stock direction compared with market and technical indicators.
 

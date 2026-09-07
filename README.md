@@ -31,7 +31,7 @@ The overall goal is not to assume that sentiment can predict stock prices, but t
 
 ## Dataset & Data Preparation
 
-![Dataset Overview](images/dataset.png)
+<img src="images/dataset.png" width="700">
 
 We are using three datasets:
 

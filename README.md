@@ -26,12 +26,13 @@ The project focuses on four key dimensions:
 
 The overall goal is not to assume that sentiment can predict stock prices, but to determine whether social-media sentiment provides additional information that could support short-term market analysis and decision-making.
 
+**My power BI dashboard** [link to dashboard](https://drive.google.com/file/d/14Um2-KoQ6LaBObQziMnm3Uksvs3FDcxX/view?usp=sharing)
+**Dataset** [link to dataset](https://drive.google.com/drive/folders/1zv4QHl4479dFcIVokQJ4TytcVYiHHozj?usp=drive_link)
 
 ## Power BI Dashboard
 
-![Power BI Dashboard](images/powerbi-dashboard.png)
+![Power BI Dashboard](images/dashboard.png)
 
-> Replace `images/powerbi-dashboard.png` with the actual path of your Power BI screenshot in your GitHub repository.
 
 
 ## Dataset & Data Preparation
